@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "run-tracker"
+version = "0.1.0"
+description = "Lightweight SQLite experiment tracker for parameters, metrics and run comparison."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+run-tracker = "run_tracker.cli:main"
+
+[tool.setuptools]
+packages = ["run_tracker"]
